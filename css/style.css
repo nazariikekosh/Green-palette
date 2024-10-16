@@ -1,0 +1,49 @@
+ a {
+  text-decoration: none;
+  color: inherit;
+ }
+
+ body {
+  font-family: 'Inter', sans-serif;
+  color: #0c3e2e;
+  font-size: 18px;
+  font-weight: 500;
+ }
+ .f{
+  font-family: 'Balsamiq-Sans', sans-serif;
+
+  font-family: 'Kaisei Decol', serif;
+  font-family: 'Manrope', sans-serif;
+ }
+
+ .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px; 
+ }
+
+ .header {
+  background-image: url(../images/header-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+ }
+
+ .header-top {
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .menu__list {
+  display: flex; 
+  gap: 0 30px;
+ }
+
+ .menu__link {
+  text-transform: uppercase;
+  font-size: 16px;
+ }
+
+ .phone {
+  color: #bb8a52;
+ }
