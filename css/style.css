@@ -12,7 +12,6 @@
  }
  .f{
   font-family: 'Balsamiq-Sans', sans-serif;
-
   font-family: 'Kaisei Decol', serif;
   font-family: 'Manrope', sans-serif;
  }
@@ -27,10 +26,14 @@
   background-image: url(../images/header-bg.svg);
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: contain;
  }
 
  .header-inner {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
  }
 
  .header-top {
@@ -64,6 +67,11 @@
   max-width: 510px;
  }
 
+ .header-content__text span{
+  color: #cc2e2e;
+ }
+  
+
  .header-title {
   font-size: 48px;
   font-weight: 600;
@@ -79,8 +87,13 @@
   font-size: 20px;
  }
 
- .header-content__text{
+ .header-content__img {
+  max-width: 589px;
+ }
+
+ .header__text{
   font-size: 24px;
   text-align: center;
+  padding: 25px 0;
  }
 
