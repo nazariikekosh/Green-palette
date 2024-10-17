@@ -194,3 +194,19 @@
   padding-left: 90px;
  }
 
+ .projects{
+  margin-bottom: 13 0px;
+ }
+
+ .projects__text{
+  margin-bottom: 50px;
+  max-width: 595px;
+  font-size: 28px;
+ }
+ 
+ .project__galeri-img{
+  max-width: 396px;
+  border-radius: 40px;
+  border: 1px solid #BB8A52;
+ }
+
