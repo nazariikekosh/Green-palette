@@ -7,6 +7,7 @@
   font-family: 'Inter', sans-serif;
   color: #0c3e2e;
   font-size: 18px;
+  line-height: 1.2;
   font-weight: 500;
  }
  .f{
@@ -28,6 +29,10 @@
   background-position: top center;
  }
 
+ .header-inner {
+  min-height: 100vh;
+ }
+
  .header-top {
   padding-top: 32px;
   display: flex;
@@ -47,3 +52,35 @@
  .phone {
   color: #bb8a52;
  }
+
+ .header-content__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+  align-items: center;
+ }
+
+ .header-content__text {
+  max-width: 510px;
+ }
+
+ .header-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 20px 0 80px;
+  max-width: 428px;
+ }
+
+ .header-content__btn {
+  background: #ffba00;
+  padding: 20px 32px;
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 20px;
+ }
+
+ .header-content__text{
+  font-size: 24px;
+  text-align: center;
+ }
+
