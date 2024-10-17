@@ -10,6 +10,13 @@
   line-height: 1.2;
   font-weight: 500;
  }
+
+ .title {
+   font-size: 36px;
+   font-weight: 600;
+   margin-bottom: 50px;
+ }
+
  .f{
   font-family: 'Balsamiq-Sans', sans-serif;
   font-family: 'Kaisei Decol', serif;
@@ -27,6 +34,7 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
+  margin-bottom: 150px;
  }
 
  .header-inner {
@@ -95,5 +103,47 @@
   font-size: 24px;
   text-align: center;
   padding: 25px 0;
+ }
+
+ .about {
+  margin-bottom: 150px;
+ }
+
+ .about__inner-img{
+  max-width: 588px;
+ }
+
+ .about__inner{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+ }
+
+ .about__text{
+  margin-bottom: 30px;
+  max-width: 500px;
+ }
+
+ .about__text span{
+   font-family: 'Balsamiq-Sans', sans-serif;
+   font-size: 24px;
+   font-weight: 400;
+ }
+
+ .about__inner-title{
+  font-size: 28px;
+  margin-bottom: 30px;
+ }
+
+ .about__inner-list{
+  display: flex;
+  gap: 0 30px;
+  text-align: center;
+  color: #BB8A52;
+ }
+
+ .about__inner-list dt{
+  font-size: 48px;
+  margin-bottom: 5px;
  }
 
