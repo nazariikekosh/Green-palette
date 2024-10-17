@@ -195,13 +195,29 @@
  }
 
  .projects{
-  margin-bottom: 13 0px;
+  margin-bottom: 110px;
  }
 
  .projects__text{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   max-width: 595px;
   font-size: 28px;
+ }
+
+ .projects__galery{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+ }
+
+ .galery--item{
+  grid-area: span 2;
+ }
+
+ .projects__galery-text{
+  text-align: center;
+  padding: 20px 0;
  }
  
  .project__galeri-img{
