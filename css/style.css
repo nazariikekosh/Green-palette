@@ -317,3 +317,36 @@
    padding: 20px;
    font-size: 20px;
  }
+
+ .work {
+   margin-bottom: 150px;
+ }
+
+ .work__list {
+   list-style-type: none;
+   counter-reset: my-counter;
+   max-width: 1020px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 0 15px;
+ }
+
+ .work__item {
+   font-size: 28px;
+   position: relative;
+   line-height: 185px;
+   padding-left: 64px;
+ }
+
+ .work__item::before {
+   content: counter(my-counter, decimal-leading-zero);
+   counter-increment: my-counter;
+   font-size: 128px;
+   font-family: 'Kaisei Decol', serif;
+   color: rgba(109, 151, 115, 0.2);
+   font-weight: 400;
+   letter-spacing: -12px;
+   position: absolute;
+   left: 0;
+ }
