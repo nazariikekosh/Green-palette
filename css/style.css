@@ -350,3 +350,32 @@
    position: absolute;
    left: 0;
  }
+
+ .team {
+   margin-bottom: 150px;
+ }
+
+ .team__text {
+   font-size: 28px;
+   margin-bottom: 50px;
+ }
+
+ .team__list {
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+
+ }
+
+ .team__item {
+   width: 200px;
+ }
+
+ .team__item-img {
+   border: 1px solid #FFBA00;
+ }
+
+ .team__item-name {
+   padding: 10px 0 15px;
+   text-align: center;
+ }
