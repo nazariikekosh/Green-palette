@@ -379,3 +379,43 @@
    padding: 10px 0 15px;
    text-align: center;
  }
+
+ .questions {
+   margin-bottom: 110px;
+ }
+
+ .accordeon {
+   column-count: 2;
+   gap: 0 22px;
+ }
+
+ .accordeon__item {
+   margin-bottom: 40px;
+ }
+
+ .accordeon__title {
+   margin-bottom: 15px;
+   font-size: 24px;
+   background-color: transparent;
+   border: none;
+   border-radius: 0;
+   text-align: left;
+   cursor: pointer;
+   padding-right: 70px;
+   position: relative;
+   width: 100%;
+ }
+
+ .accordeon__descr {
+   display: none;
+ }
+
+ .accordeon__title::after {
+   content: '';
+   position: absolute;
+   background-image: url(../images/arrow-down.svg);
+   width: 15px;
+   height: 24px;
+   top: 3px;
+   right: 40px;
+ }
