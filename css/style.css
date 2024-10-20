@@ -419,3 +419,21 @@
    top: 3px;
    right: 40px;
  }
+
+ .contact-form {
+   margin-bottom: 150px;
+ }
+
+ .contact-form__inner {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+ }
+
+ .contact-form__text {
+   font-size: 28px;
+   margin-bottom: 15px;
+ }
+
+ .form__text {
+   margin-bottom: 15px;
+ }
