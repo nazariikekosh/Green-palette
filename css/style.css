@@ -500,3 +500,26 @@ body {
 .contact-form__img--mod {
   grid-column: 1/-1;
 }
+
+.contacts {
+  margin-bottom: 150px;
+}
+
+.contacts__inner {
+  display: flex;
+  gap: 0 20px;
+}
+
+.contacts__text {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+
+.contacts__info {
+  font-size: 20px;
+}
+
+.contacts__info dt {
+  margin-top: 20px;
+}
