@@ -523,3 +523,50 @@ body {
 .contacts__info dt {
   margin-top: 20px;
 }
+
+.footer {
+  background-color: rgb(109, 151, 115, 0.1);
+  padding: 40px 0 47px;
+}
+
+.footer__inner {
+  display: flex;
+  gap: 0 22px;
+}
+
+.footer__left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__menu {
+  font-size: 20px;
+}
+
+.footer__menu-item {
+  margin-bottom: 20px;
+}
+
+.social__list {
+  display: flex;
+  gap: 0 20px;
+}
+
+.footer__right {
+  width: 100%;
+  padding-left: 30px;
+}
+
+.footer__logo img {
+  width: 137px;
+  height: 87px;
+  margin-bottom: 42px;
+}
+
+.footer__text {
+  font-size: 36px;
+  max-width: 322px;
+  font-weight: 600;
+}
