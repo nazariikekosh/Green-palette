@@ -491,6 +491,10 @@ body {
   margin-bottom: 150px;
 }
 
+.reviews__slider {
+  padding-bottom: 55px;
+}
+
 .reviews__item {
   font-size: 28px;
 }
@@ -506,6 +510,22 @@ body {
   height: 80px;
   border-radius: 50%;
   margin-right: 20px;
+}
+
+.reviews__item-arrow {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.reviews__item-prev {
+  left: 50%;
+  transform: translateX(-65px);
+}
+
+.reviews__item-next {
+  right: 50%;
+  transform: translateX(+65px);
 }
 
 
