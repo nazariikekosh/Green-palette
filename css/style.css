@@ -487,6 +487,28 @@ body {
   margin-left: 30px;
 }
 
+.reviews {
+  margin-bottom: 150px;
+}
+
+.reviews__item {
+  font-size: 28px;
+}
+
+.reviews__item-name {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.reviews__item-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+
 .contact-form__images {
   display: grid;
   gap: 20px;
