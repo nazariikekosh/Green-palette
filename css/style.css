@@ -21,6 +21,10 @@ body {
   margin-bottom: 50px;
 }
 
+.section {
+  margin-bottom: 150px;
+}
+
 .f {
   font-family: 'Balsamiq-Sans', sans-serif;
   font-family: 'Kaisei Decol', serif;
@@ -28,9 +32,9 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .header {
@@ -38,7 +42,6 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
-  margin-bottom: 150px;
 }
 
 .header-inner {
@@ -117,10 +120,6 @@ body {
 }
 
 
-.about {
-  margin-bottom: 150px;
-}
-
 .about__inner-img {
   max-width: 588px;
 }
@@ -163,9 +162,6 @@ body {
   max-width: 587px;
 }
 
-.why {
-  margin-bottom: 150px;
-}
 
 .why__text {
   min-width: 580px;
@@ -207,10 +203,6 @@ body {
   padding-left: 90px;
 }
 
-.projects {
-  margin-bottom: 110px;
-}
-
 .projects__text {
   margin-bottom: 30px;
   max-width: 595px;
@@ -240,7 +232,6 @@ body {
 }
 
 .servises {
-  margin-bottom: 110px;
   padding: 20px 0 40px;
   background-color: rgb(109, 151, 115, 0.1);
 }
@@ -264,9 +255,6 @@ body {
   padding-top: 20px;
 }
 
-.prices {
-  margin-bottom: 150px;
-}
 
 .prices__text {
   font-size: 28px;
@@ -326,9 +314,6 @@ body {
   font-size: 20px;
 }
 
-.work {
-  margin-bottom: 150px;
-}
 
 .work__list {
   list-style-type: none;
@@ -354,14 +339,12 @@ body {
   font-family: 'Kaisei Decol', serif;
   color: rgba(109, 151, 115, 0.2);
   font-weight: 400;
-  letter-spacing: -12px;
+  letter-spacing: -8px;
   position: absolute;
   left: 0;
+  -webkit-text-stroke: 1px rgb(109, 151, 115);
 }
 
-.team {
-  margin-bottom: 150px;
-}
 
 .team__text {
   font-size: 28px;
@@ -388,9 +371,6 @@ body {
   text-align: center;
 }
 
-.questions {
-  margin-bottom: 110px;
-}
 
 .accordeon {
   column-count: 2;
@@ -426,10 +406,6 @@ body {
   height: 24px;
   top: 3px;
   right: 40px;
-}
-
-.contact-form {
-  margin-bottom: 150px;
 }
 
 .contact-form__inner {
@@ -558,9 +534,6 @@ body {
   grid-column: 1/-1;
 }
 
-.contacts {
-  margin-bottom: 150px;
-}
 
 .contacts__inner {
   display: flex;
@@ -627,3 +600,5 @@ body {
   max-width: 322px;
   font-weight: 600;
 }
+
+@media (max-width: 1000px) {}
