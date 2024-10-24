@@ -109,6 +109,14 @@ body {
   padding: 25px 0;
 }
 
+.main {
+  background-image: url(../images/decor/dec-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+
 .about {
   margin-bottom: 150px;
 }
@@ -499,11 +507,18 @@ body {
   font-size: 28px;
 }
 
+
 .reviews__item-name {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
+
+
+.reviews__item-text {
+  font-size: 20px;
+}
+
 
 .reviews__item-photo {
   width: 80px;
