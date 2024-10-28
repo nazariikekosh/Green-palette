@@ -635,6 +635,14 @@ body {
   font-weight: 600;
 }
 
+.header-content__btn--desk {
+  display: none;
+}
+
+.header-content__text-desc {
+  display: none;
+}
+
 @media (max-width: 1150px) {
   .header-content__img {
     max-width: 560px;
@@ -676,6 +684,10 @@ body {
     background-size: auto;
   }
 
+  .header-top {
+    align-items: center;
+  }
+
   .header-title {
     font-size: 28px;
   }
@@ -685,7 +697,30 @@ body {
   }
 
   .menu__list {
-    display: none;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    padding: 70px 0;
+    z-index: 1;
+    background-color: rgb(109, 151, 115);
+    opacity: 0;
+    transform: translateX(-120%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Відкритий стан меню */
+  .menu.menu--open .menu__list {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .menu__link {
+    display: block;
+    padding: 15px 0;
   }
 
   .menu.menu--open {
@@ -694,14 +729,14 @@ body {
 
   .menu__btn {
     display: block;
+    position: relative;
+    z-index: 2;
   }
 
   .phone {
     font-size: 16px;
   }
-}
 
-@media (max-width: 768px) {
   .header-title {
     margin-bottom: 25px;
   }
@@ -712,5 +747,78 @@ body {
 
   .header-content {
     margin: auto 0;
+  }
+
+  .header-content__btn--desk {
+    display: inline-block;
+  }
+
+  .header-content__btn--mob {
+    display: none;
+  }
+
+  .header-content__img {
+    margin-top: 35px;
+    max-width: 100%;
+  }
+
+  .header-content__box {
+    padding-top: 20px;
+  }
+
+  .header-content__inner {
+    display: block;
+    text-align: center;
+  }
+
+  .header-content__text {
+    margin: 0 auto;
+  }
+
+  .header-title {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .container {
+    max-width: 1220px;
+    padding: 0 10px;
+  }
+
+  .header-top {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .phone {
+    order: -1;
+  }
+}
+
+@media (max-width: 360px) {
+  .header-title {
+    margin: 12px 0 20px;
+  }
+
+  .header-content__text-mob {
+    display: none;
+  }
+
+  .header-content__btn--desk {
+    display: block;
+  }
+
+  .header-content__text-desc {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
   }
 }
