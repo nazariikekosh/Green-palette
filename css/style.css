@@ -705,10 +705,23 @@ body {
     margin-bottom: 20px;
   }
 
+  .about__inner-list dt {
+    font-size: 30px;
+  }
+
+  .about__inner-list dd {
+    font-size: 13px;
+  }
+
 
 }
 
-@media (max-width: 840px) {
+@media (max-width: 877px) {
+
+  .section {
+    margin-bottom: 90px;
+  }
+
   .header-content__img {
     max-width: 344px;
   }
@@ -826,7 +839,15 @@ body {
     max-width: 100%;
   }
 
+  .about__inner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
+
 
 @media (max-width: 500px) {
 
@@ -847,6 +868,10 @@ body {
 
   .phone {
     order: -1;
+  }
+
+  .about__inner-list dt {
+    font-size: 25px;
   }
 }
 
