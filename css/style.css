@@ -200,7 +200,7 @@ body {
 
 
 .why__text {
-  min-width: 580px;
+  max-width: 580px;
   font-size: 28px;
   margin-bottom: 40px;
 }
@@ -650,7 +650,8 @@ body {
     max-width: 470px;
   }
 
-  .header-content__img {
+  .header-content__img,
+  .why__img {
     max-width: 470px;
   }
 
@@ -665,7 +666,13 @@ body {
   .about__inner-list dd {
     font-size: 14px;
   }
+
+  .why__inner-item {
+    font-size: 24px;
+  }
 }
+
+
 
 
 @media (max-width: 1000px) {
@@ -713,7 +720,31 @@ body {
     font-size: 13px;
   }
 
+  .why__inner-item {
+    font-size: 22px;
+  }
 
+  .why__inner {
+    gap: 0;
+  }
+
+  .why__inner-list {
+    padding-left: 0;
+  }
+
+
+}
+
+@media (max-width: 926px) {
+
+
+  .why__text {
+    font-size: 24px;
+  }
+
+  .why__img {
+    max-width: 320px;
+  }
 }
 
 @media (max-width: 877px) {
@@ -738,6 +769,10 @@ body {
     font-size: 28px;
   }
 
+  .title {
+    font-size: 28px;
+  }
+
   .menu {
     order: -1;
   }
@@ -758,7 +793,7 @@ body {
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
-  /* Відкритий стан меню */
+
   .menu.menu--open .menu__list {
     opacity: 1;
     transform: translateY(0);
@@ -845,6 +880,45 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+  .why__inner-item {
+    font-size: 18px;
+  }
+
+  .why__inner-item.pl--60 {
+    padding-left: 40px;
+  }
+
+  .why__inner-item.pl--90 {
+    padding-left: 70px;
+  }
+
+  .why__inner-item+.why__inner-item {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .why__inner-item {
+    font-size: 14px;
+  }
+
+  .why__img {
+    max-width: 170px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .why__text {
+    font-size: 14px;
+  }
+
+  .why__inner-item {
+    font-size: 14px;
+  }
+
 }
 
 
@@ -873,6 +947,22 @@ body {
   .about__inner-list dt {
     font-size: 25px;
   }
+
+  .why__inner-item+.why__inner-item {
+    margin-top: 10px;
+  }
+
+  .why__inner-item.pl--60 {
+    padding-left: 20px;
+  }
+
+  .why__inner-item.pl--90 {
+    padding-left: 30px;
+  }
+
+  why__inner-item:before {
+    padding-right: 3px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -892,5 +982,9 @@ body {
     display: block;
     margin-top: 30px;
     font-size: 16px;
+  }
+
+  .why__inner {
+    gap: 0;
   }
 }
