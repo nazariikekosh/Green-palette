@@ -736,7 +736,15 @@ body {
     gap: 20px 10px;
   }
 
+  .servises__list {
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 0;
+  }
 
+  .servises__item {
+    width: 50%;
+  }
 
 }
 
@@ -917,6 +925,14 @@ body {
     margin-top: 30px;
   }
 
+  .servises__text {
+    font-size: 24px;
+  }
+
+  .servises__item-img {
+    max-width: 200px;
+  }
+
 
 }
 
@@ -940,6 +956,18 @@ body {
 
   .why__inner-item {
     font-size: 14px;
+  }
+
+  .servises__text {
+    font-size: 14px;
+  }
+
+  .servises__item-text {
+    font-size: 14px;
+  }
+
+  .servises__item-img {
+    max-width: 170px;
   }
 
 }
@@ -1004,6 +1032,14 @@ body {
   .projects__galery-item:nth-child(3) img,
   .projects__galery-item:first-child img {
     order: -1;
+  }
+
+  .servises__item-img {
+    max-width: 150px;
+  }
+
+  servises__item-img {
+    max-width: 100%;
   }
 }
 
