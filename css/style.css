@@ -750,6 +750,11 @@ body {
     padding: 50px 40px 40px;
   }
 
+  .team__list {
+    gap: 20px 60px;
+    flex-wrap: wrap;
+  }
+
 }
 
 @media (max-width: 926px) {
@@ -982,6 +987,19 @@ body {
   .prices__item-btninner {
     width: 100%;
   }
+
+  .team__text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .team__item {
+    min-width: 210px;
+  }
+
+  .team__item-name {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 655px) {
@@ -1146,6 +1164,10 @@ body {
     padding-left: 24px;
     line-height: 100px;
   }
+
+  .team__item {
+    width: 200px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1173,7 +1195,19 @@ body {
     font-size: 16px;
   }
 
+  .title {
+    margin-bottom: 20px;
+  }
+
   .why__inner {
     gap: 0;
+  }
+
+  .team__text {
+    font-size: 14px;
+  }
+
+  .team__item-descr {
+    font-size: 14px;
   }
 }
