@@ -944,6 +944,16 @@ body {
 
   .prices__list {
     max-width: 600px;
+    align-items: center;
+  }
+
+  .work__item::before {
+    font-size: 100px;
+  }
+
+  .work__item {
+    font-size: 24px;
+    padding-left: 54px;
   }
 
 }
@@ -967,6 +977,22 @@ body {
 
   .prices__box {
     align-items: center;
+  }
+
+  .prices__item-btninner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 655px) {
+  .work__item::before {
+    font-size: 80px;
+  }
+
+  .work__item {
+    font-size: 18px;
+    line-height: 150px;
+    padding-left: 45px;
   }
 }
 
@@ -1005,13 +1031,25 @@ body {
 
   .prices__list {
     max-width: 400px;
-    padding: 30px;
+    padding: 10px;
   }
 
+  .prices__item-btninner {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  .work__item::before {
+    font-size: 60px;
+  }
+
+  .work__item {
+    font-size: 14px;
+    line-height: 130px;
+    padding-left: 40px;
+  }
 
 }
-
-
 
 @media (max-width: 500px) {
 
@@ -1096,6 +1134,17 @@ body {
   .prices__item-sum {
     font-size: 24px;
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .work__item::before {
+    font-size: 40px;
+  }
+
+  .work__item {
+    padding-left: 24px;
+    line-height: 100px;
   }
 }
 
