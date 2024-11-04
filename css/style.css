@@ -409,13 +409,17 @@ body {
 
 
 .accordeon {
-  column-count: 2;
-  gap: 0 22px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 40px;
 }
+
 
 .accordeon__item {
   margin-bottom: 40px;
 }
+
+
 
 .accordeon__title {
   margin-bottom: 15px;
@@ -434,6 +438,10 @@ body {
   display: none;
 }
 
+.accordeon__item.accordeon__item--active .accordeon__descr {
+  display: block;
+}
+
 .accordeon__title::after {
   content: '';
   position: absolute;
@@ -441,7 +449,7 @@ body {
   width: 15px;
   height: 24px;
   top: 3px;
-  right: 40px;
+  right: 0px;
 }
 
 .contact-form__inner {
@@ -767,6 +775,10 @@ body {
   .why__img {
     max-width: 320px;
   }
+
+  .accordeon__title {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -782,6 +794,8 @@ body {
   .projects__text {
     font-size: 24px;
   }
+
+
 }
 
 @media (max-width: 877px) {

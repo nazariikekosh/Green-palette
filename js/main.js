@@ -16,3 +16,19 @@ menuBtn.addEventListener('click', () => {
   menu.classList.toggle('menu--open');
   menuBtn.classList.toggle('menu__btn--open');
 });
+
+const accordeonTitle = document.querySelectorAll('.accordeon__title');
+
+accordeonTitle.forEach(item => {
+  item.addEventListener('click', () => {
+    const parent = item.parentNode;
+    if (parent.classList.contains('accordeon__item--active')) {
+      parent.classList.remove('accordeon__item--active');
+    } else {
+      accordeonTitle.forEach(element => {
+        element.parentNode.classList.remove('accordeon__item--active');
+      })
+      parent.classList.add('accordeon__item--active');
+    }
+  })
+})
