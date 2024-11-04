@@ -779,24 +779,13 @@ body {
   .accordeon__title {
     font-size: 18px;
   }
+
+  .accordeon__descr {
+    font-size: 16px;
+  }
 }
 
-@media (max-width: 768px) {
-  .galery--item {
-    display: none;
-  }
 
-  .projects__galery {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .projects__text {
-    font-size: 24px;
-  }
-
-
-}
 
 @media (max-width: 877px) {
 
@@ -977,6 +966,7 @@ body {
 
 }
 
+
 @media (max-width: 768px) {
   .prices__text {
     font-size: 24px;
@@ -1014,6 +1004,16 @@ body {
   .team__item-name {
     padding: 10px;
   }
+
+
+  .projects__galery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .projects__text {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 655px) {
@@ -1025,6 +1025,11 @@ body {
     font-size: 18px;
     line-height: 150px;
     padding-left: 45px;
+  }
+
+  .accordeon {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -1167,6 +1172,8 @@ body {
     font-size: 24px;
     margin-bottom: 50px;
   }
+
+
 }
 
 @media (max-width: 450px) {
@@ -1223,5 +1230,13 @@ body {
 
   .team__item-descr {
     font-size: 14px;
+  }
+
+  .accordeon__title {
+    font-size: 14px;
+  }
+
+  .accordeon__descr {
+    font-size: 12px;
   }
 }
