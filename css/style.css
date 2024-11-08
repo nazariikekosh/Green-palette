@@ -1048,7 +1048,16 @@ body {
 
   .contact-form__images {
     padding-left: 0;
-    ;
+    display: flex;
+    justify-content: center;
+  }
+
+  .reviews__item-name {
+    font-size: 18px;
+  }
+
+  .reviews__item-text {
+    font-size: 18px;
   }
 
 }
@@ -1122,6 +1131,8 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+
 }
 
 @media (max-width: 600px) {
@@ -1289,6 +1300,13 @@ body {
     max-width: 34px;
   }
 
+  .reviews__item-name {
+    font-size: 16px;
+  }
+
+  .reviews__item-text {
+    font-size: 16px;
+  }
 
 }
 
