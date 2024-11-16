@@ -32,19 +32,19 @@
               </button>
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a class="menu__link" href="#">Про нас</a>
+                  <a class="menu__link" href="#about">Про нас</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">Проекти</a>
+                  <a class="menu__link" href="#projects">Проекти</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">Послуги</a>
+                  <a class="menu__link" href="#servises">Послуги</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">Ціни</a>
+                  <a class="menu__link" href="#prices">Ціни</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">Контакти</a>
+                  <a class="menu__link" href="#contact">Контакти</a>
                 </li>
               </ul>
             </nav>
@@ -79,7 +79,7 @@
 
 
   <main class="main">
-    <section class="about section">
+    <section class="about section" id="about">
       <div class="container">
         <h2 class="title">Про нас</h2>
         <div class="about__inner">
@@ -137,7 +137,7 @@
       </div>
     </section>
 
-    <section class="projects section">
+    <section class="projects section" id="projects">
       <div class="container">
         <h2 class="title">Наші проекти</h2>
         <p class="projects__text">
@@ -167,7 +167,7 @@
         </div>
     </section>
 
-    <section class="servises section">
+    <section class="servises section" id="servises">
       <div class="container">
         <h2 class="title">
           Послуги
@@ -197,7 +197,7 @@
     </section>
 
 
-    <section class="prices section">
+    <section class="prices section" id="prices">
       <div class="container">
         <h2 class="title">
           Тарифи і ціни
@@ -338,7 +338,7 @@
       </div>
     </section>
 
-    <section class="contact-form section">
+    <section class="contact-form section" id="contact">
       <div class="container">
         <div class="contact-form__inner">
           <div class="contact-form__content">
@@ -424,34 +424,32 @@
         </div>
       </div>
     </section>
-    <!--
+
     <section class="contacts section">
       <div class="container">
         <h2 class="title">Контакти</h2>
         <div class="contacts__inner">
           <img class="contacts__img" src="./images/contacts.png" alt="img">
-          <div class="contacts__content">
-            <p class="contacts__text">Зателефонуйте зараз та розпочніть трансформацію вашого саду у справжній рай на
-              землі!
-            </p>
-            <dl class="contacts__info">
-              <dt>Телефон</dt>
-              <dd>
-                <a href="tel:38099299996">+38 099 299 996</a>
-              </dd>
-              <dt>Адреса</dt>
-              <dd>м. Київ, вул. Зелена, 5б</dd>
-              <dt>Графік роботи</dt>
-              <dd>пн-сб з 10:00 до 20:00</dd>
-            </dl>
-          </div>
+          <p class="contacts__text">Зателефонуйте зараз та розпочніть трансформацію вашого саду у справжній рай на
+            землі!
+          </p>
+          <dl class="contacts__info">
+            <dt>Телефон</dt>
+            <dd>
+              <a href="tel:38099299996">+38 099 299 996</a>
+            </dd>
+            <dt>Адреса</dt>
+            <dd>м. Київ, вул. Зелена, 5б</dd>
+            <dt>Графік роботи</dt>
+            <dd>пн-сб з 10:00 до 20:00</dd>
+            <a class="contacts__info-btn" href="#">Замовити дзвінок</a>
+          </dl>
         </div>
       </div>
     </section>
-      -->
   </main>
 
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__left">
@@ -500,7 +498,7 @@
         </div>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
