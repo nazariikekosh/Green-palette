@@ -55,3 +55,41 @@ accordeonTitle.forEach(item => {
     }
   })
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".form");
+  const inputs = form.querySelectorAll(".form__input");
+  const submitButton = form.querySelector(".form__btn");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Зупиняємо стандартну поведінку форми
+
+    let isValid = true;
+
+    // Перевірка кожного інпута
+    inputs.forEach((input) => {
+      if (!input.value.trim()) {
+        input.classList.add("error"); // Додаємо клас для стилізації помилки
+        isValid = false;
+      } else {
+        input.classList.remove("error"); // Видаляємо клас, якщо поле заповнено
+      }
+    });
+
+    if (isValid) {
+      alert("Дані надіслано!");
+      form.reset(); // Очищуємо форму
+    } else {
+      alert("Будь ласка, заповніть всі поля!");
+    }
+  });
+
+  // Видалення класу помилки при введенні тексту
+  inputs.forEach((input) => {
+    input.addEventListener("input", function () {
+      if (input.value.trim()) {
+        input.classList.remove("error");
+      }
+    });
+  });
+});
