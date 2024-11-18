@@ -638,6 +638,11 @@ body {
 
 .footer__inner {
   display: flex;
+  flex-direction: column;
+}
+
+.footer__content {
+  display: flex;
   gap: 0 22px;
 }
 
@@ -676,6 +681,12 @@ body {
   font-size: 36px;
   max-width: 322px;
   font-weight: 600;
+}
+
+.footer__copy {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .header-content__btn--desk {
