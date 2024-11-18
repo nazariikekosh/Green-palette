@@ -1319,11 +1319,15 @@ body {
   }
 
   .footer__text {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .team__item-descr {
     text-align: justify;
+    font-size: 16px;
+  }
+
+  .footer__menu-link {
     font-size: 16px;
   }
 
