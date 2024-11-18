@@ -1322,6 +1322,11 @@ body {
     font-size: 18px;
   }
 
+  .team__item-descr {
+    text-align: justify;
+    font-size: 16px;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -1383,6 +1388,8 @@ body {
   .projects__galery-item:first-child img {
     order: -1;
   }
+
+
 
   .servises__item-img {
     max-width: 150px;
