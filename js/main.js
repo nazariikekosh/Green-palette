@@ -25,7 +25,8 @@ const swiper = new Swiper('.reviews__slider', {
 const menuBtn = document.querySelector('.menu__btn');
 const menu = document.querySelector('.menu');
 
-menuBtn.addEventListener('click', () => {
+menuBtn.addEventListener('click', (e) => {
+  e.stopPropagation(); // Зупиняємо спливання події, щоб клік по кнопці не спрацьовував на документі
   menu.classList.toggle('menu--open');
   menuBtn.classList.toggle('menu__btn--open');
 });
@@ -38,6 +39,16 @@ menuLinks.forEach(link => {
     menuBtn.classList.remove('menu__btn--open');
   });
 });
+
+// Додаємо подію кліку на документ
+document.addEventListener('click', (e) => {
+  // Перевіряємо, чи елемент кліку знаходиться поза межами меню та кнопки
+  if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+    menu.classList.remove('menu--open');
+    menuBtn.classList.remove('menu__btn--open');
+  }
+});
+
 
 
 const accordeonTitle = document.querySelectorAll('.accordeon__title');
@@ -92,4 +103,24 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+});
+
+const projectSlider = new Swiper('.projects__slider', {
+  loop: true, // Циклічний перегляд
+  autoplay: {
+    delay: 2500,
+  },
+  slidesPerView: 1, // Кількість слайдів, які видно одночасно
+  spaceBetween: 20, // Відстань між слайдами
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
 });

@@ -144,6 +144,8 @@ body {
 
 .menu__btn--open .menu__line:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
+  background-color: white;
+  box-shadow: #ffba00 1px 1px 0px 0px;
 }
 
 .menu__btn--open .menu__line:nth-child(2) {
@@ -152,6 +154,8 @@ body {
 
 .menu__btn--open .menu__line:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
+  background-color: white;
+  box-shadow: #ffba00 1px 1px 0px 0px;
 }
 
 .menu__list {
@@ -253,32 +257,30 @@ body {
   padding-left: 90px;
 }
 
-.projects__text {
-  margin-bottom: 30px;
-  max-width: 595px;
-  font-size: 28px;
+
+.projects__slider {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-.projects__galery {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-.galery--item {
-  grid-area: span 2;
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .projects__galery-text {
-  text-align: center;
-  padding: 20px 0;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
 }
 
-.project__galeri-img {
-  max-width: 100%;
-  border-radius: 40px;
-  border: 1px solid #BB8A52;
+.projects__text {
+  margin-bottom: 50px;
+  max-width: 595px;
+  font-size: 26px;
 }
 
 .servises {
@@ -746,6 +748,7 @@ body {
     padding-left: 20px;
   }
 
+
 }
 
 
@@ -935,6 +938,9 @@ body {
 
   .menu__list {
     position: absolute;
+    color: white;
+    text-shadow: #ffba00 1px 1px 0px;
+    box-shadow: #FFBA00 1px 2px 0px 0px;
     display: block;
     left: 0;
     right: 0;
@@ -944,6 +950,11 @@ body {
     padding: 70px 0;
     z-index: 1;
     background-color: rgb(109, 151, 115);
+    background-image: url(../images/gallery/3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
     opacity: 0;
     transform: translateY(-120%);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -1220,7 +1231,7 @@ body {
   }
 
   .footer__menu-item {
-    margin: 0 0 15px;
+    margin: 0 0 10px;
   }
 
 }
@@ -1484,6 +1495,10 @@ body {
 
 @media (max-width: 420px) {
   .prices__list {
+    max-width: 270px;
+  }
+
+  .projects__slider img {
     max-width: 270px;
   }
 }
